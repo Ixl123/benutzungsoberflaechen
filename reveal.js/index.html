@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>reveal.js – The HTML Presentation Framework</title>
+
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+	<!-- Code syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="images/workflow.jpeg">
+					<h1>Was?</h1>
+					<h2>..ist Bower, Grunt, Node, NPM?</h2>
+					<img src="images/cry.png" alt="">
+					<aside class="notes">
+						#Heute geht alles um what the fuck is Bower, Grunt, Node und NPM
+						#Moderne Webtechnologien
+						#Werkzeuge zum paketieren verwalten und automatisieren
+
+					</aside>
+				</section>
+				<section data-background="images/tools2_b.jpg">
+					<h1>Node, NPM, Grunt, Bower?</h1>
+					<ul>
+						<li>Server Side Javascript</li>
+						<li>Node Package Manager</li>
+						<li>Task Runner</li> 
+						<li>"WEB" Package Manager</li>
+					</ul>
+					<aside class="notes">
+						#Fragestellung umgestellt und logisch aufgebaut...
+						#Alles in einem Stichwort erklärt
+
+					</aside>
+				</section>
+				<section data-background="images/tools3_b.jpg">
+					<img src="images/node.png" alt="node">
+				</section>
+
+
+				
+				<aside class="notes">
+					#entstand aus dem Wunschgedanken Javascript auch für backend zu verwenden man muss nur eine sprache lernen... da im frontend im web hauptsächlich javascript verwendet wird.
+					#Backend javascript
+					#sehr schnelle engine 
+					#asynchron
+				</aside>
+				<section data-background="images/tools2_b.jpg">
+					<img src="images/npm.svg" alt="placeholder+image" width="30%">
+					<img src="images/jspm.png" alt="placeholder+image" width="30%">
+					<img src="images/bower-logo.png" alt="placeholder+image" width="30%">
+					<img src="images/brocoli.png" alt="placeholder+image" width="30%">
+					<img src="images/webpackLogo.png" alt="webpack" width="30%">
+					<aside class="notes">
+					#All dies sind mehr oder weniger Package Manager und es gibt noch ein haufen mehr
+					# Package manager erlauben es pakete / module wie auch jeder der Manager dass nennt sich zu laden und so die Dependencies die man zu anderen Projekten hat zu verwalten. Bspw. will man bootstrap und jquery in seiner webseite verwenden dann könnte man die manuel download und in sein Projekt hinzufügen... . Doch was passiert bei einem update oder was wenn man sich einige sachen download und dann garnicht verwendet. Oder man hat sogar 5 unterschiedliche versionen ausversehen in seinem Projekt. Dann genau dann hilft ein package manager der die dependencies verwaltet. Man kann z.B. pakete automatisiert updaten auf den neusten stand usw..
+					#NPM (kommt auch gleich mit Node) der größte und bekannteste auf dem auch einige baiseren
+					#Im web bereich wird häufig Bower verwendet wobei sich gerade viel wandelt neuer trend NPM mit Browserify...
+					#In der React community kommt im wesentlichen Webpack zum einsatz was schon viel mit sich bringt und auch einen eigenen Task runner hat... wird gehyped.
+				</aside>
+				</section>
+				<section data-background="images/tools1_b.jpg">
+					<img src="images/grunt.svg" alt="grunt">
+					<img src="images/gulp-2x.png" alt="gulp">
+					<img src="images/webpackLogo.png" alt="webpack" >
+					<aside class="notes">
+					# das sind alles samt task runner sie ermöglichen es nervige wiederholende anstrengende lang andauernde aufgaben für dich automatisch zu erledigen.
+				</aside>
+				</section>
+				<section tagcloud large bw data-background="images/tools4_b.jpg">
+					watch
+					rename
+					hint
+					uglify
+					compile
+					minimize
+					livereload
+					imagemin
+					prefix 
+					filesize
+					...
+				</section>
+				<aside class="notes">
+					# hier ein paar beispiele
+					# grunt war zuerst da große community immernoch beständig
+					# gulp neu schneller wird immer mehr gehyped und hat mittlerweile eine genauso große community 
+					# webpack wie schon erwähnt hat einfach schon einige dinge die gulp und grunt können mit integriert jedoch kann man gulp oder grunt problemlos mit inegrieren.
+				</aside>
+				<section data-background="images/workflow.jpeg">
+					<h1>Was?</h1>
+					<h2>..ist Bower, Grunt, Node, NPM?</h2>
+					<img src="images/happy.png" alt="">
+					<aside class="notes">
+					# abschließend bleibt zusagen es ist zuerst einmal wichtig sich mit den tools auseinanderzusetzen und im Projekt einzusetzen um Zeit zu sparen..
+					# welche tools zum einsatz kommen ist erstmal gar nicht so wichtig außer man stoßt mit einem Tool an seine Grenzen... 
+					# hoffentlich konntet ihr hier viel mitnehmen und ihr könnt jetzt alle Happy sein 
+				</aside>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				// Display controls in the bottom right corner
+				controls: true,
+
+    			// Display a presentation progress bar
+    			progress: true,
+
+    // Display the page number of the current slide
+    slideNumber: true,
+
+    // Push each slide change to the browser history
+    history: false,
+
+    // Enable keyboard shortcuts for navigation
+    keyboard: true,
+
+    // Enable the slide overview mode
+    overview: true,
+
+    // Vertical centering of slides
+    center: true,
+
+    // Enables touch navigation on devices with touch input
+    touch: true,
+
+    // Loop the presentation
+    loop: false,
+
+    // Change the presentation direction to be RTL
+    rtl: false,
+
+    // Turns fragments on and off globally
+    fragments: true,
+
+    // Flags if the presentation is running in an embedded mode,
+    // i.e. contained within a limited portion of the screen
+    embedded: false,
+
+    // Flags if we should show a help overlay when the questionmark
+    // key is pressed
+    help: true,
+
+    // Flags if speaker notes should be visible to all viewers
+    showNotes: false,
+
+    // Number of milliseconds between automatically proceeding to the
+    // next slide, disabled when set to 0, this value can be overwritten
+    // by using a data-autoslide attribute on your slides
+    autoSlide: 0,
+
+    // Stop auto-sliding after user input
+    autoSlideStoppable: true,
+
+    // Enable slide navigation via mouse wheel
+    mouseWheel: false,
+
+    // Hides the address bar on mobile devices
+    hideAddressBar: true,
+
+    // Opens links in an iframe preview overlay
+    previewLinks: false,
+
+    // Transition style
+    transition: 'default', // none/fade/slide/convex/concave/zoom
+
+    // Transition speed
+    transitionSpeed: 'default', // default/fast/slow
+
+    // Transition style for full page slide backgrounds
+    backgroundTransition: 'default', // none/fade/slide/convex/concave/zoom
+
+    // Number of slides away from the current that are visible
+    viewDistance: 3,
+
+    // Parallax background image
+    parallaxBackgroundImage: '', // e.g. "'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg'"
+
+    // Parallax background size
+    parallaxBackgroundSize: '', // CSS syntax, e.g. "2100px 900px"
+
+    // Number of pixels to move the parallax background per slide
+    // - Calculated automatically unless specified
+    // - Set to 0 to disable movement along an axis
+    parallaxBackgroundHorizontal: null,
+    parallaxBackgroundVertical: null,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/tagcloud/tagcloud.js', async: true } 
+
+				]
+			});
+
+		</script>
+
+	</body>
+	</html>
